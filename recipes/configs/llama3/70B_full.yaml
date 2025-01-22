@@ -17,12 +17,12 @@
 #
 
 
-output_dir: /tmp/torchtune/llama3_70B/full # /tmp may be deleted by your system. Change it to your preference.
+output_dir: /gpfs/lchu/70b_hsdp_768/torchtune/test
 
 # Tokenizer
 tokenizer:
   _component_: torchtune.models.llama3.llama3_tokenizer
-  path: /tmp/Meta-Llama-3-70B-Instruct/original/tokenizer.model
+  path: /datasets/tokenizers/original/tokenizer.model
   max_seq_len: null
 
 # Dataset
@@ -38,7 +38,7 @@ model:
 
 checkpointer:
   _component_: torchtune.training.FullModelHFCheckpointer
-  checkpoint_dir: /tmp/Meta-Llama-3-70B-Instruct
+  checkpoint_dir: /gpfs/lchu/70b_hsdp_768/hf/step-480000
   checkpoint_files:
     filename_format: model-{}-of-{}.safetensors
     max_filename: "00030"
