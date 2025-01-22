@@ -28,7 +28,7 @@ tokenizer:
 # Dataset
 dataset:
   _component_: torchtune.datasets.alpaca_dataset
-  packed: False  # True increases speed
+  packed: True  # True increases speed
 seed: null
 shuffle: True
 
@@ -48,7 +48,7 @@ checkpointer:
 resume_from_checkpoint: False
 
 # Fine-tuning arguments
-batch_size: 1
+batch_size: 2
 epochs: 1
 
 optimizer:
