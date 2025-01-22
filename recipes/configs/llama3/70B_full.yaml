@@ -23,12 +23,12 @@ output_dir: /gpfs/lchu/70b_hsdp_768/torchtune/test
 tokenizer:
   _component_: torchtune.models.llama3.llama3_tokenizer
   path: /datasets/tokenizers/original/tokenizer.model
-  max_seq_len: 8192
+  max_seq_len: null
 
 # Dataset
 dataset:
   _component_: torchtune.datasets.alpaca_dataset
-  packed: True  # True increases speed
+  packed: False  # True increases speed
 seed: null
 shuffle: True
 
