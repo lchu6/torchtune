@@ -17,7 +17,7 @@
 #
 
 
-output_dir: /gpfs/lchu/70b_hsdp_768/torchtune/test
+output_dir: /gpfs/lchu/70b_hsdp_768/torchtune/multi_node_test
 
 # Tokenizer
 tokenizer:
